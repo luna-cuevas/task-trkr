@@ -1,0 +1,5 @@
+.done {
+  display: flex;
+  flex-direction: row !important;
+  width: 50vw;
+}

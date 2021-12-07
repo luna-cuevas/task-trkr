@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+* {
+  font-family: "Alata", sans-serif;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #222;
+}
+
+.container {
+  display: flex;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  width: 60%;
+  max-height: 73vh;
+  margin: 10vh auto;
+  padding: 20px;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.67);
+  border-radius: 10px;
+}
+
+.wrapper .text-area {
+  width: 30vw;
+}
+.wrapper .heading {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.show-list {
+  overflow-y: scroll;
+  width: 100%;
+  margin: 1vh auto;
+  max-height: 100%;
+}
+
+.show-list .each-item {
+  padding: 10px 20px;
+  background-color: rgb(236, 236, 236);
+  margin: 10px 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.show-list .each-item h3 {
+  font-weight: 400;
+}
+
+.todo-buttons .btn {
+  margin-right: 10px;
+}
+
+.container .delete-all-btn {
+  margin-top: 10px;
+}
+
+#spotify {
+  position: absolute;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.396);
+  bottom: 0;
+  top: auto;
+  width: 100% !important;
+  height: 10vh !important;
+}
+
+@media screen and (max-width: 760px) {
+  .wrapper {
+    width: 95% !important;
+    margin: 5vh auto 15vh auto;
+    padding: 20px 0px;
+    box-shadow: 0 0 10px 8px rgba(0, 0, 0, 0.67);
+    border-radius: 10px;
+  }
+  .wrapper .text-area {
+    width: 60vw;
+  }
+  .show-list {
+    width: 95%;
+  }
+  .show-list .each-item {
+    padding: 10px 30px;
+    background-color: rgb(236, 236, 236);
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+  .todo-buttons .btn {
+    margin-right: -20px;
+  }
+}
