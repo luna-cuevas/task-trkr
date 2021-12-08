@@ -9,12 +9,25 @@ html {
   height: 100vh;
   position: relative;
 }
-
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  background-color: #222;
+  background: linear-gradient(45deg, #a11a41, #e73c7e, #5f78d4, #000000);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .container {
@@ -35,7 +48,7 @@ body {
   max-height: 73vh;
   margin: 10vh auto;
   padding: 20px;
-  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.67);
+  box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.355);
   border-radius: 10px;
 }
 
